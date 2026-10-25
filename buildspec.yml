@@ -1,0 +1,13 @@
+
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.11
+
+  build:
+    commands:
+      - echo "Starting Python unit tests"
+      - python -m unittest -v test_app
+      - echo "All unit tests passed successfully"
